@@ -14,22 +14,22 @@
 <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
 <script>
 function LinkToSurvey(){
-  window.open('https://LohoriC.github.io/portfolio/survey.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/survey.html#contact','_self')
 }
 function LinkToHome(){
-  window.open('https://LohoriC.github.io/portfolio/home.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/home.html#contact','_self')
 }
 function LinkToProfile(){
-  window.open('https://LohoriC.github.io/portfolio/profile.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/profile.html#contact','_self')
 }
 function LinkToInfo(){
-  window.open('https://LohoriC.github.io/portfolio/infopage.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/infopage.html#contact','_self')
 }
 function LinkToNumbers(){
-  window.open('https://LohoriC.github.io/portfolio/helpfulnumbers.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/helfulnumbers.html#contact','_self')
 }
 function LinkToUs(){
-  window.open('https://LohoriC.github.io/portfolio/aboutus.html','_self')
+  window.open('https://hbaez06.github.io/Portafolio/aboutus.html#contact','_self')
 }
 </script>
 
@@ -52,8 +52,40 @@ function LinkToUs(){
   transition: all 0.5s;
   cursor: pointer;
   margin: 3px;
-  /*transform: translate(5px,-100px)*/
-    
+  transform: translate(5px,-100px)
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 20px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.blue{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+}
+.clay{
+  font-size: 35px;
+  font-family: 'Amiri', serif;
+}
+.back{
+  background-color: rgb(255, 214, 221);
+}
   .yellow{
     font-size: 60px;
     font-family: 'Homemade Apple', cursive;
@@ -93,19 +125,19 @@ function LinkToUs(){
   </style>
 <body class="back">
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-white w3-wide w3-padding w3-card">
-    <img src="https://news.northwesternmutual.com/image/Brain_Animation_Alpha_v2_crop.gif" height="100" width="140"><a href="#home" class="w3-bar-item w3-button" style="vertical-align:right"><b class="blue">Precious Minds</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToHome()"><span>Home </span></a>
-      <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToProfile()"><span>Your Profile </span></a>
-      <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToInfo()"><span>Mental Health </span></a>
-      <a href="#about" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToNumbers()"><span>Helpful Numbers </span></a>
-      <a href="#contact" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToUs()"><span>About Us</span></a>
+  <div class="w3-top">
+    <div class="w3-white w3-wide w3-padding w3-card">
+      <img src="https://news.northwesternmutual.com/image/Brain_Animation_Alpha_v2_crop.gif" height="100" width="140"><a href="#home" class="w3-bar-item w3-button" style="vertical-align:right"><b class="blue">Precious Minds</b></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToHome()"><span>Home </span></a>
+        <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToProfile()"><span>Your Profile </span></a>
+        <a href="#projects" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToInfo()"><span>Mental Health </span></a>
+        <a href="#about" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToNumbers()"><span>Helpful Numbers </span></a>
+        <a href="#contact" class="button" style="vertical-align:right" class="w3-bar-item w3-button" class="yellow" onclick="LinkToUs()"><span>About Us</span></a>
+      </div>
     </div>
   </div>
-</div>
 
 <!-- Header -->
 <center class="clay">
